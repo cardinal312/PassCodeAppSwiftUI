@@ -11,6 +11,9 @@
 		FA6FB6462BD7458B0076CB6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FB6452BD7458B0076CB6A /* ContentView.swift */; };
 		FA6FB6482BD7458D0076CB6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6FB6472BD7458D0076CB6A /* Assets.xcassets */; };
 		FA6FB64B2BD7458D0076CB6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6FB64A2BD7458D0076CB6A /* Preview Assets.xcassets */; };
+		FA6FB6522BD749E30076CB6A /* PassCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FB6512BD749E30076CB6A /* PassCodeView.swift */; };
+		FA6FB6542BD74A020076CB6A /* NumberPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FB6532BD74A020076CB6A /* NumberPadView.swift */; };
+		FA6FB6562BD74A320076CB6A /* PasscodeIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FB6552BD74A320076CB6A /* PasscodeIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		FA6FB6452BD7458B0076CB6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA6FB6472BD7458D0076CB6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA6FB64A2BD7458D0076CB6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA6FB6512BD749E30076CB6A /* PassCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCodeView.swift; sourceTree = "<group>"; };
+		FA6FB6532BD74A020076CB6A /* NumberPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadView.swift; sourceTree = "<group>"; };
+		FA6FB6552BD74A320076CB6A /* PasscodeIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				FA6FB6432BD7458B0076CB6A /* PassCodeAppSwiftUIApp.swift */,
 				FA6FB6452BD7458B0076CB6A /* ContentView.swift */,
+				FA6FB6512BD749E30076CB6A /* PassCodeView.swift */,
+				FA6FB6532BD74A020076CB6A /* NumberPadView.swift */,
+				FA6FB6552BD74A320076CB6A /* PasscodeIndicatorView.swift */,
 				FA6FB6472BD7458D0076CB6A /* Assets.xcassets */,
 				FA6FB6492BD7458D0076CB6A /* Preview Content */,
 			);
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6FB6522BD749E30076CB6A /* PassCodeView.swift in Sources */,
+				FA6FB6562BD74A320076CB6A /* PasscodeIndicatorView.swift in Sources */,
 				FA6FB6462BD7458B0076CB6A /* ContentView.swift in Sources */,
 				FA6FB6442BD7458B0076CB6A /* PassCodeAppSwiftUIApp.swift in Sources */,
+				FA6FB6542BD74A020076CB6A /* NumberPadView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +209,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +266,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -280,6 +292,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +300,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = justiOSDev.PassCodeAppSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,6 +326,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +334,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = justiOSDev.PassCodeAppSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
